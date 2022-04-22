@@ -18,7 +18,7 @@
                         bindings = <
 
    &kp ESC          &kp Q          &kp W          &kp F          &kp P          &kp G                              &kp J          &kp L          &kp U          &kp Y           &kp SEMI        &kp BSPC
-   &kp TAB          &kp A          &kp R          &kp S          &kp T          &kp D                              &kp H          &kp N          &kp E          &kp I           &kp O           &kp SQT
+   &lt 3 TAB        &kp A          &kp R          &kp S          &kp T          &kp D                              &kp H          &kp N          &kp E          &kp I           &kp O           &kp SQT
    &kp LSHFT        &kp Z          &kp X          &kp C          &kp V          &kp B                              &kp K          &kp M          &kp COMMA      &kp DOT         &kp FSLH        &mt RSHIFT RET
                                                   &kp LALT       &kp LGUI       &lt 1 SPACE                        &lt 2 SPACE    &kp RGUI       &kp RALT
                         >;
@@ -42,8 +42,19 @@
    &kp GRAVE        &kp N1         &kp N2         &kp N3         &kp N4         &kp N5                             &kp N6         &kp N7         &kp N8         &kp N9          &kp N0          &kp BSPC
    &kp DEL          &kp F1         &kp F2         &kp F3         &kp F4         &kp F5                             &kp F6         &kp MINUS      &kp EQUAL      &kp LBKT        &kp RBKT        &kp BSLH
    &kp CAPS         &kp F7         &kp F8         &kp F9         &kp F10        &kp F11                            &kp F12        &kp C_PP       &kp C_PREV     &kp C_VOL_UP    &kp C_VOL_DN    &kp C_NEXT
-                                                  &kp LALT       &kp LGUI       &kp SPACE                          &trans      &none          &none
+                                                  &kp LALT       &kp LGUI       &kp SPACE                          &trans         &none          &none
                         >;
+                };
+
+                config_layer {
+                        label = "CONFIG";
+                        bindings = <
+
+   &KP RCTRL        &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
+   &none            &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
+   &none            &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
+                                                  &none          &none          &none                              &none          &none          &none
+
                 };
         };
 };
