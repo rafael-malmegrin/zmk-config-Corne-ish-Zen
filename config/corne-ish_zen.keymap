@@ -18,9 +18,9 @@
                         bindings = <
 
    &kp ESC          &kp Q          &kp W          &kp F          &kp P          &kp G                              &kp J          &kp L          &kp U          &kp Y           &kp SEMI        &kp BSPC
-   &lt 3 TAB        &kp A          &kp R          &kp S          &kp T          &kp D                              &kp H          &kp N          &kp E          &kp I           &kp O           &kp SQT
+   &kp TAB          &kp A          &kp R          &kp S          &kp T          &kp D                              &kp H          &kp N          &kp E          &kp I           &kp O           &kp SQT
    &kp LSHFT        &kp Z          &kp X          &kp C          &kp V          &kp B                              &kp K          &kp M          &kp COMMA      &kp DOT         &kp FSLH        &mt RSHIFT RET
-                                                  &kp LALT       &kp LGUI       &lt 1 SPACE                        &lt 2 SPACE    &kp RGUI       &kp RALT
+                                                  &kp LALT       &kp LGUI       &lt 1 SPACE                        &lt 2 SPACE    &kp RGUI       &mo 3
                         >;
                 };
 
@@ -46,11 +46,11 @@
                         >;
                 };
 
-                config_layer {
-                        label = "CONFIG";
+                BT_layer {
+                        label = "BT";
                         bindings = <
 
-   &KP RCTRL        &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
+   &none            &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
    &none            &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
    &none            &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
                                                   &none          &none          &none                              &none          &none          &none
