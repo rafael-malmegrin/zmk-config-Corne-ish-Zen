@@ -50,7 +50,7 @@
                         label = "BT";
                         bindings = <
 
-   &none            &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
+   &kp RCTRL        &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
    &none            &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
    &none            &none          &none          &none          &none          &none                              &none          &none          &none          &none           &none           &none 
                                                   &none          &none          &none                              &none          &none          &none
