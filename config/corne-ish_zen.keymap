@@ -60,8 +60,8 @@
 
    &kp TILDE        &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PRCNT                          &kp CARET      &kp AMPS       &kp ASTRK      &kp LPAR        &kp RPAR        &kp BKSP
    &kp DEL          &kp LSHIFT     &kp LCTRL      &kp LALT       &kp LGUI       &none                              &none          &kp UNDER      &kp PLUS       &kp LBRC        &kp RBRC        &kp PIPE
-   &none            &none          &none          &none          &none          &kp PRINT_3                        &kp PRINT_4    &none          &kp LEFT       &kp DOWN        &kp UP          &kp RIGHT
-                                                  &none          &none          &trans                             &kp SPACE      &kp RGUI       &kp RALT
+   &none            &none          &none          &none          &none          &kp PRINT_3                        &kp PRINT_4    &kp LEFT       &kp DOWN       &kp UP          &kp RIGHT       &none
+                                                  &none          &trans         &kp SPACE                          &kp BSPC       &none          &none
                         >;
                 };
 
