@@ -9,6 +9,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+
+#define PRINT_3    LG(LS(LC(N3)))
+#define PRINT_4    LG(LS(LC(N4)))
+#define EXP_AS     LG(LS(LA(W)))
+#define EXP_WEB    LG(LS(LA(S)))
+#define BRCCED     LA(C)
+
 / {
     behaviors {
         lh_pht: left_hand_positional_hold_tap {
@@ -38,13 +45,6 @@
     };
   
   
-#define PRINT_3    LG(LS(LC(N3)))
-#define PRINT_4    LG(LS(LC(N4)))
-#define EXP_AS     LG(LS(LA(W)))
-#define EXP_WEB    LG(LS(LA(S)))
-#define BRCCED     LA(C)
-
-
 / {
         keymap {
                 compatible = "zmk,keymap";
