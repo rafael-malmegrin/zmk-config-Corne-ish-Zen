@@ -16,6 +16,19 @@
 #define BRCCED     LA(C)
 
 / {
+    behaviors {
+        lh_pht: left_hand_positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_POSITIONAL_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -23,10 +36,10 @@
                         label = "QWERTY";
                         bindings = <
 
-   &kp ESC          &kp Q          &kp W          &kp F          &kp P          &kp G                              &kp J          &kp L          &kp U          &kp Y           &kp BRCCED      &kp SEMI
-   &lt 3 TAB        &mt LSHIFT A   &mt LCTL R     &mt LALT S     &mt LGUI T     &kp D                              &kp H          &mt RGUI N     &mt RALT E     &mt RCTL I      &mt RSHIFT O    &kp SQT
-   &kp LSHFT        &kp Z          &kp X          &kp C          &kp V          &kp B                              &kp K          &kp M          &kp COMMA      &kp DOT         &kp FSLH        &mt RSHIFT RET
-                                                  &none          &mo 1          &kp SPACE                          &kp BSPC       &mo 2          &none
+   &kp ESC          &kp Q              &kp W              &kp F              &kp P              &kp G              &kp J          &kp L          &kp U          &kp Y           &kp BRCCED      &kp SEMI
+   &lt 3 TAB        &lh_pht LSHIFT A   &lh_pht LCTL R     &lh_pht LALT S     &lh_pht LGUI T     &kp D              &kp H          &mt RGUI N     &mt RALT E     &mt RCTL I      &mt RSHIFT O    &kp SQT
+   &kp LSHFT        &kp Z              &kp X              &kp C              &kp V              &kp B              &kp K          &kp M          &kp COMMA      &kp DOT         &kp FSLH        &mt RSHIFT RET
+                                                          &none              &mo 1              &kp SPACE          &kp BSPC       &mo 2          &none
                         >;
                 };
 
